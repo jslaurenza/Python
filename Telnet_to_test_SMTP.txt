@@ -1,0 +1,26 @@
+USING TELNET TO TEST SMTP
+
+Example:
+
+$ telnet <IP or FQDN> 25
+Trying 172.16.6.165...
+Connected to some_mail_server.
+Escape character is '^]'.
+220 some_mail_server.local ESMTP
+helo
+250 some_mail_server.local
+
+mail from: <test@test.com>
+250 sender <test@test.com> ok
+rcpt to: <user@other.com> 
+250 recipient <user@other.com> ok
+data
+354 go ahead
+subject: TESTING SMTP
+This is line one.
+This is line two.
+. 
+250 ok: Message 214 accepted
+quit
+221 some_mail_server.local
+Connection closed by foreign host.

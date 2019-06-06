@@ -1,0 +1,1 @@
+awk '{OFS=","} {print $4,$5,$6}' ./VSEP6_UIDHstats.txt > new_UIDHStats.csv

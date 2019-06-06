@@ -1,0 +1,5 @@
+sftpuser
+$_FtPU1s3R
+68.128.200.4
+
+-o StrictHostKeychecking=no -o UserKnownHostsFile=/dev/null
